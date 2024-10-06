@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Climate Action - SDG 13 | Educational Resource</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {background-image: url(    https://media.istockphoto.com/id/1477849066/photo/drought-and-water-crisis.jpg?s=612x612&w=0&k=20&c=oeoUb4HuvET1ovyI67OHLETNp4zFz6yxHeLP6aENG5s=
+        );
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #3CC3DB, #2FB344);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        nav {
+            background-color: #1a1a1a;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 2rem 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .btn {
+            display: inline-block;
+            background: #3CC3DB;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1rem;
+        }
+        .chart-container {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        #quiz {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+        .question {
+            margin-bottom: 1.5rem;
+        }
+        .options label {
+            display: block;
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Climate Action - SDG 13</h1>
+        <p>Understanding and Addressing Climate Change Together</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="introduction.html">Home</a></li>
+            <li><a href="yo.html">Learn</a></li>
+            <li><a href="take action.html">Take Action</a></li>
+            <li><a href="data.html">Data</a></li>
+            <li><a href="quiz .html">Quiz</a></li>
+        </ul>
+    </nav> 
+    <section>
+        <div class="grid">
+        <div class="card">
+        <h2>Climate Change Impacts: </h2>
+        <p>1. Sea-level rise and coastal erosion</p>
+           <p>2. Extreme weather events (heatwaves, droughts,floods)</p>
+          <p> 3. Water scarcity and food insecurity</p>
+          <p> 4. Loss of biodiversity and ecosystem disruption</p>
+        </div>
+        
+        
+        
+            <div class="card">
+        </p>
+        <h2>solutions</h2>
+        <p>1. Transition to renewable energy sources(solar, wind and hydro)</p>
+        <p>2. Energy efficiency and conservation</p>
+        <p> 3. Electrify transportation and industry</p>
+        <p>4. Carbon capture and storage</p> 
+        <p>5. Sustainable land use and Forestry</p>
+    </div>
+    </div>
+
+        </p>
+
+    </section>     
+        <section id="act">
+            <h2>Take Action</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Individual Actions</h3>
+                    <ul>
+                        <li>Reduce energy consumption</li>
+                        <li>Use sustainable transportation</li>
+                        <li>Minimize waste</li>
+                        <li>Choose eco-friendly products</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>School Actions</h3>
+                    <ul>
+                        <li>Start a green club</li>
+                        <li>Implement recycling programs</li>
+                        <li>Create awareness campaigns</li>
+                        <li>Organize climate-focused events</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Community Actions</h3>
+                    <ul>
+                        <li>Participate in local initiatives</li>
+                        <li>Support climate policies</li>
+                        <li>Join environmental organizations</li>
+                        <li>Share knowledge with others</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+            </div>
+
+    <footer>
+        <p>© 2024 Climate Action Educational Resource | Created for SDG 13 Awareness</p>
+    </footer>
+
+    <script>
+        // Temperature Chart
+        const ctx = document.getElementById('temperatureChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['1960', '1970', '1980', '1990', '2000', '2010', '2020'],
+                datasets: [{
+                    label: 'Global Temperature Anomaly (°C)',
+                    data: [0.03, 0.03, 0.26, 0.45, 0.61, 0.82, 1.02],
+                    borderColor: '#3CC3DB',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        
+    </script>
+</body>
+</html>
